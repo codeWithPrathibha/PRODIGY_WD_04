@@ -1,0 +1,263 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f0f0f0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #212121;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  header:hover {
+    background-color: #2980b9;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Hero Styles */
+  
+  .hero {
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hero-animation 3s ease;
+    background-color: #f392e5;
+  }
+  
+  .hero-content {
+    text-align: center;
+    animation: slide-up 2s ease;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Profile Picture Styles */
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Styles */
+  
+  section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+  }
+  
+  section:hover {
+    background-color: #f7f7f7;
+  }
+  
+  /* Project Grid Styles */
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    animation: grid-animation 2s ease;
+    background-color: #8bc34a;
+  }
+  
+  .project-item {
+    background-color: #e5e5e5;
+    padding: 20px;
+    animation: item-animation 2s ease;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .project-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sticker Styles */
+  
+  .sticker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .sticker img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .sticker-webdev {
+    top: 20%;
+    left: 80%;
+    background-color: #3498db;
+  }
+  
+  .sticker-html {
+    top: 40%;
+    left: 20%;
+    background-color: #f7dc6f;
+  }
+  
+  .sticker-css {
+    top: 60%;
+    left: 60%;
+    background-color: #9b59b6;
+  }
+  
+  .sticker-js {
+    top: 80%;
+    left: 40%;
+    background-color: #9b59b6;
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .project-item img {
+    width: 100%;
+    height: 200px; /* increased height to 200px */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added box shadow */
+    transition: transform 0.5s ease; /* added transition effect */
+  }
+  
+  .project-item img:hover {
+    transform: scale(1.05); /* added hover effect to scale up the image */
+  }
+  
+  /* Learn More Button Styles */
+
+.learn-more-btn {
+    background-color: #ff69b4; /* pink color */
+    color: #fff; /* white text */
+    border: none;
+    padding: 12px 30px; /* increased padding for a larger button */
+    font-size: 18px;
+    font-weight: bold; /* bold font */
+    cursor: pointer;
+    border-radius: 50px; /* rounded corners */
+    transition: background-color 0.5s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* added box shadow */
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #ff7cb4; /* lighter pink color on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* increased box shadow on hover */
+  }
+  
+  .learn-more-btn:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+   
+  .image {
+    width: 250px; /* set the width and height to the same value to create a square box */
+    height: 250px;
+    object-fit: cover; /* make the image cover the entire container while maintaining its aspect ratio */
+    border-radius: 10px; /* add a slight rounded corner to the image */
+    margin: 20px; /* add some margin around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle box shadow to the image */
+    display: block; /* make the image a block element */
+    margin: 0 auto; /* center the image horizontally */
+  }
